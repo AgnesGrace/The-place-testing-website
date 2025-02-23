@@ -1,0 +1,120 @@
+@media (max-width: 1112px) {
+  /***hero ****/
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-pry {
+    font-size: 4.8rem;
+  }
+  .meals-mobile {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 998px) {
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .plan-starter,
+  .plan-premium {
+    justify-self: center;
+  }
+  .footer-mobile {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-nav {
+    /* background-color: rgba(255, 255, 255, 0.944); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.5s;
+    transform: translateX(100%);
+    /*Browser support*/
+    background-color: rgba(255, 255, 255, 0.744);
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    margin-top: 5.8rem;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .mobile-icons-btn {
+    display: block;
+  }
+  .menu-icon[name='close-outline'] {
+    display: none;
+  }
+
+  .nav-open .menu-icon[name='close-outline'] {
+    display: block;
+  }
+  .nav-open .menu-icon[name='menu-outline'] {
+    display: none;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .form-container {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+  .pricing-mobile {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-container {
+    border-radius: 10px;
+    height: 34rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /***hero ****/
+
+  .heading-pry {
+    font-size: 3.8rem;
+
+    width: 85%;
+  }
+  .hero-description {
+    width: 85%;
+  }
+  .hero .btn {
+    padding: 0.8rem 1.6rem;
+  }
+  .customers {
+    flex-direction: column;
+  }
+  /*How it works*/
+
+  .how-it-works,
+  .meals-mobile,
+  .pricing-mobile {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .footer-mobile {
+    grid-template-columns: 1fr;
+  }
+}

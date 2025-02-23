@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Place is the home for best meals. Eat the best food you can ever immagine"
+    />
+    <link rel="icon" href="./img/logo/logo copy.png" />
+    <link rel="apple-touch-icon" href="./img/logo/apple.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <title>The place &mdash; Enjoy!</title>
+  </head>
+  <body>
+    <header class="header">
+      <p>The Place</p>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-header-link">Home</a></li>
+          <li><a href="#hero" class="main-header-link">About Us</a></li>
+          <li><a href="#" class="main-header-link">Menu</a></li>
+          <li><a href="#how" class="main-header-link">More</a></li>
+          <li><a href="#selection" class="main-header-link">Selections</a></li>
+          <li><a href="#pricing" class="main-header-link">Pricing</a></li>
+          <li>
+            <a href="#connect" class="nav-cta main-header-link">Connect</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="mobile-icons-btn" aria-label="open and close menu button">
+        <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="menu-icon" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero" id="hero">
+        <div class="hero">
+          <div class="hero-text-container">
+            <h1 class="heading-pry">
+              The sweetest delights delivered to your table!
+            </h1>
+            <p class="hero-description">
+              Dive into a world of sweetness with our year-round dessert
+              subscription. Tailored to your personal tastes, we promise to
+              satisfy your sweet tooth like never before. Last year, we
+              delighted over 300,000 customers with our exquisite treats!
+            </p>
+            <a href="#" class="btn btn-cta margin-right-sm">Eat now?</a>
+            <a href="#" class="btn btn-outline margin-bottom-md"
+              >Learn More...</a
+            >
+            <div class="customers">
+              <div class="customers-img">
+                <img src="./img/customers/chu.png" alt="Chu face" />
+                <img src="./img/customers/maria.png" alt="Maria face" />
+                <img src="./img/customers/pedro.png" alt="Pedro face" />
+                <img src="./img/customers/robeto.png" alt="Robeto face" />
+                <img src="./img/customers/selma.png" alt="Selmaface" />
+                <img src="./img/customers/simone.png" alt="Simone face" />
+              </div>
+              <p><span>300,000+</span> customers</p>
+            </div>
+          </div>
+          <div class="hero-img-container">
+            <picture>
+              <source
+                srcset="./img/party_food-compressed.webp"
+                type="image/webp"
+              />
+              <source srcset="./img/party_food-comp.jpg" type="image/jpeg" />
+
+              <img
+                src="./img/party_food.png"
+                alt="A plate of food, people toasting to better meal"
+                class="hero-img"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="sub-heading">How The Place Works</span>
+          <h2 class="heading-secondary">
+            Your daily dessert in 3 simple steps
+          </h2>
+        </div>
+        <div
+          class="container grid grid--2-cols grid--align-center how-it-works"
+        >
+          <div class="step-box">
+            <p class="step-num">01</p>
+            <h3 class="heading-footer">Tell us your favorites:</h3>
+            <p class="step-description">
+              Never waste time deciding what to satisfy your sweet tooth! Our
+              algorithm will curate a personalized dessert menu just for you,
+              ensuring you enjoy all your favorite flavors.
+            </p>
+          </div>
+          <div class="step-box-img">
+            <img
+              src="./img/croped_phone_order.jpg"
+              alt="Ordering food on Phone"
+              class="phone"
+            />
+          </div>
+        </div>
+        <div
+          class="container grid grid--2-cols grid--align-center how-it-works"
+        >
+          <div class="step-box-img">
+            <img
+              src="./img/croped_phone_order.jpg"
+              alt="Ordering food on Phone"
+              class="phone"
+            />
+          </div>
+          <div class="step-box">
+            <p class="step-num">02</p>
+            <h3 class="heading-tertiary">Approve your dessert selection</h3>
+            <p class="step-description">
+              Each week, review the menu created by our system. Feel free to
+              swap desserts or add your own special requests!
+            </p>
+          </div>
+        </div>
+        <div
+          class="container grid grid--2-cols grid--align-center how-it-works"
+        >
+          <div class="step-box">
+            <p class="step-num">03</p>
+            <h3 class="heading-tertiary">TEnjoy convenient delivery</h3>
+            <p class="step-description">
+              Our expert pastry chefs will prepare your selection daily,
+              delivering it right to your door at your preferred time. Adjust
+              your delivery schedule whenever you like!
+            </p>
+          </div>
+          <div class="step-box-img">
+            <img
+              src="./img/croped_phone_order.jpg"
+              alt="Ordering food on Phone"
+              class="phone"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-dish" id="selection">
+        <div class="container">
+          <span class="sub-heading">The Place is perfect for everyone</span>
+          <h2 class="heading-secondary">
+            The Place offers a selection from 50+ meals
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols meals-mobile">
+          <div class="dish-card">
+            <img src="./img/eggs.jpeg" alt="Eggs" class="dish-img" />
+            <div class="card-text-container">
+              <div class="meal-tag">
+                <span class="tag">All</span>
+              </div>
+              <p class="dish-title">Chocolate lovers</p>
+              <ul class="dish-lists">
+                <li>
+                  <ion-icon name="power-outline"></ion-icon>
+                  <span><strong>450</strong> Calories</span>
+                </li>
+                <li>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                  <span><strong>4.90</strong> rating</span>
+                </li>
+                <li>
+                  <ion-icon name="flame-outline"></ion-icon
+                  ><span><strong>1112</strong> reviews</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="./img/party.jpeg" alt="Eggs" class="dish-img" />
+            <div class="card-text-container">
+              <div class="meal-tag">
+                <span class="tag">All</span>
+              </div>
+              <p class="dish-title">Chocolate lovers</p>
+              <ul class="dish-lists">
+                <li>
+                  <ion-icon name="power-outline"></ion-icon>
+                  <span><strong>350</strong> Calories</span>
+                </li>
+                <li>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                  <span><strong>4.30</strong> rating</span>
+                </li>
+                <li>
+                  <ion-icon name="flame-outline"></ion-icon
+                  ><span><strong>112</strong> reviews</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dish-card">
+            <img src="./img/restaurant.jpeg" alt="Eggs" class="dish-img" />
+            <div class="card-text-container">
+              <div class="meal-tag">
+                <span class="tag">All</span>
+              </div>
+              <p class="dish-title">Chocolate lovers</p>
+              <ul class="dish-lists">
+                <li>
+                  <ion-icon name="power-outline"></ion-icon>
+                  <span><strong>450</strong> Calories</span>
+                </li>
+                <li>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                  <span><strong>4.90</strong> rating</span>
+                </li>
+                <li>
+                  <ion-icon name="flame-outline"></ion-icon
+                  ><span><strong>1112</strong> reviews</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pricing" id="pricing">
+        <div class="container">
+          <span class="sub-heading">Pricing</span>
+          <h2 class="heading-secondary">Try and taste our meal</h2>
+        </div>
+        <div class="container grid grid--2-cols pricing-mobile">
+          <div class="pricing-plan plan-starter">
+            <header class="plan-header">
+              <p class="plan-name">Starter</p>
+              <p class="plan-price"><span>$</span>500</p>
+              <p class="plan-text">per month.</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Delivery is free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline">
+                </ion-icon>
+                <span>1 dessert per day</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span> Order from 11am to 9pm</span>
+              </li>
+              <li class="list-item">
+                <span> </span>
+              </li>
+              <li class="list-item">
+                <span> </span>
+              </li>
+              <li class="list-item">
+                <span> </span>
+              </li>
+            </ul>
+            <div class="subscribe">
+              <a href="#" class="btn btn-cta">Eat now?</a>
+            </div>
+          </div>
+          <div class="pricing-plan plan-premium">
+            <header class="plan-header">
+              <p class="plan-name">Premium Plus</p>
+              <p class="plan-price"><span>$</span>1000</p>
+              <p class="plan-text">per month.</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span>Delivery is free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline">
+                </ion-icon>
+                <span>3 desserts per day</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span> Order 24/7</span>
+              </li>
+              <li class="list-item">
+                <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+                <span> Access to exclusive table</span>
+              </li>
+            </ul>
+            <div class="subscribe">
+              <a href="#" class="btn btn-cta">Upgrade</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-form-cta" id="connect">
+        <div class="container form-container">
+          <div class="cta-img-container" role="img" aria-label=""></div>
+          <div class="cta-text-container">
+            <h2 class="heading-secondary">Try and taste our meal!</h2>
+            <p class="cta-text">
+              Our mission is to make your sweet cravings accessible and
+              enjoyable, all while ensuring a memorable dining experience.
+            </p>
+            <form class="cta-form" action="#">
+              <div>
+                <label for="firstname">Firstname</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  placeholder="Agnes"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="surname">Surname</label>
+                <input
+                  type="text"
+                  id="surname"
+                  placeholder="Augustine"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
+              <button
+                class="btn"
+                type="submit"
+                aria-label="Join The Place button"
+              >
+                Join now!
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--4-cols footer-mobile">
+        <div class="footer-links">
+          <h3 class="heading-footer">Learn more</h3>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">About The Place</a></li>
+              <li><a href="#">Dessert partners</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About The Place</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-links">
+          <h3 class="heading-footer">Resources</h3>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#"> Help center</a></li>
+              <li><a href="#">Privacy & terms</a></li>
+              <li><a href="#">Create account</a></li>
+              <li><a href="#">Business</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-links">
+          <h3 class="heading-footer">Contact</h3>
+          <div class="address-text">
+            <p>123 Sweet St., Dessert City, CA 90210</p>
+            <p>555-123-4567</p>
+            <p>hello@theplace.com</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3 class="heading-footer">The Place</h3>
+          <nav class="nav-socials">
+            <ul>
+              <li>
+                <a href="#"> <ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+              </li>
+            </ul>
+            <p>Copyright © 2025 by The-Place, Inc. All rights reserved.</p>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
