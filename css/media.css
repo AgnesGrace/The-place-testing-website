@@ -108,7 +108,9 @@
   .pricing-mobile {
     grid-template-columns: 1fr;
   }
-
+  .how-mid .step-box-img {
+    order: 2;
+  }
   .footer-mobile {
     grid-template-columns: repeat(2, 1fr);
   }
